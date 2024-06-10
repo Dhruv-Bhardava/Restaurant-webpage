@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --clr-primary: #fe5722;
+  --clr-secondary: #272d36;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff;
+  color: var(--clr-secondary);
+  overflow-x: hidden;
+}
+.section {
+  width: 100%;
+  padding: 40px 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 0 30px;
+}
+.primary {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.secondary {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.tertiray {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 14px 25px;
+  background: var(--clr-primary);
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  display: inline-block;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: var(--clr-secondary);
+}
+/* menu */
+
+nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff5f2;
+  box-shadow: 0 1px -1px rgba(0, 0, 0, 0.22);
+  z-index: 22;
+}
+label.logo {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 0 30px;
+  line-height: 80px;
+  color: var(--clr-primary);
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-size: 18px;
+  padding: 7px 13px;
+  text-decoration: none;
+  color: var(--clr-secondary);
+  transition: all 0.2s ease;
+}
+nav ul li a:hover,
+nav ul li a:active {
+  border-bottom: 2px solid var(--clr-primary);
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/* end menu  */
+
+/* hero section  */
+#hero-section {
+  background: #fff5f2;
+  margin-top: 60px;
+  position: relative;
+}
+.text,
+.visual {
+  width: 50%;
+}
+.text {
+  margin: 0 20px;
+}
+.visual img {
+  width: 90%;
+  border-radius: 10%;
+  height: auto;
+  display: block;
+  
+}
+/* #hero-section .visual img {
+  width: 90%;
+  border-radius: 50%;
+  height: auto;
+  display: block;
+  position: relative;
+  background: var(--clr-primary)
+} */
+
+#hero-section .text {
+  margin-left: 30px;
+}
+#hero-section .visual img {
+  margin-left: auto;
+}
+
+/* end of hero section  */
+
+/* how it work  */
+
+#how-it-work {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.box {
+  border: 1px solid #b2b2b2;
+  padding: 25px 5px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.box i {
+  font-size: 35px;
+  color: var(--clr-secondary);
+  margin: 15px 0;
+}
+/* .active{
+    background: var(--clr-primary);
+
+
+} */
+.box:hover {
+  background: var(--clr-primary);
+  color: #fff;
+  border: 2px solid var(--clr-primary);
+  cursor: pointer;
+}
+/* end of hpw it work  */
+
+/* about section  */
+#about .visual img,
+#app .visual img {
+  margin-right: auto;
+}
+/* end of about section  */
+
+/* restuarant menu  */
+.category {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+.category li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.category li:hover {
+  background: var(--clr-primary);
+  color: #fff;
+}
+.restaurant-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.restaurant-menu .menu-item img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 100%;
+}
+.menu-item .title {
+  color: lightgray;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.menu-item {
+  width: 260px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.order {
+  justify-content: space-between;
+}
+.btn-menu {
+  padding: 6px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid var(--clr-primary);
+  text-align: center;
+  background: none;
+  color: #fe5722;
+}
+.btn-menu:hover {
+  background: var(--clr-primary);
+  color: #fff;
+}
+.location {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* end of menu  */
+#testimonial .visual img {
+  margin-left: auto;
+}
+
+/* faq  */
+#faq .secondary {
+  text-align: center;
+}
+#faq {
+  width: 60%;
+  margin: 50px auto 20px auto;
+}
+summary {
+  padding: 1em;
+  font-size: 20px;
+  border: 1px solid #b2b2b2;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+details[open] summary ~ * {
+  height: 70px;
+  background: var(--clr-secondary);
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #b2b2b2;
+  
+}
+
+/* end of the faq section  */
+
+/* app section  */
+
+
+#app{
+  text-align: center;
+}
+#app .visual img{
+  background:var(--clr-secondary);
+  border-radius: 50%;
+}
+.app-store{
+  background: #000;
+  margin:0 10px;
+  padding:4px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color:#fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.app-store p{
+  margin-top: 8px;
+
+}
+.app-store span{
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.app-store i{
+  font-size: 25px;
+  margin-right: 14px;
+  /* aspect-ratio: 3/2;
+  width:20px;
+  object-fit: contain; */
+
+}
+.download{
+  margin:30px 0;
+}
+/* end of app section  */
+
+/* footer section  */
+.footer{
+  background: var(--clr-secondary);
+  color: #b2b2b2;
+  padding:30px 0;
+
+}
+.footer .container{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer h2{
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.footer ul{
+  list-style: none;
+  line-height: 30px;
+  font-size: 16px;
+}
+.footer ul li{
+  cursor: pointer;
+
+}
+.footer .about{
+  width:35%;
+}
+.copyright{
+  text-align: center;
+  padding:20px 0;
+  margin-top: 30px;
+  border-top: 1px solid #b2b2b2;
+}
+@media screen and (max-width:768px){
+  /* make the column stack on mobile devices
+  * by setting the width to 100% for each column,
+  * and removing the property that makes them sit side by side */
+  
+  .footer .container{
+    flex-direction: column;
+  }
+  .footer .about, .contact {
+    width:100%;
+    }
+  .footer .social_icon{
+      display: inline-block;
+      margin-left: 6px;
+      top: 4px;
+  }
+  
+} 
+    
